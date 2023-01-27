@@ -1,0 +1,24 @@
+<h1>Welcome to gokit-auth</h1>
+
+<h3>Register</h3>
+
+<form action="/register" method="post">
+    <input type="text" name="user"/>
+    <input type="password" name="pass"/>
+    <input type="submit" value="REGISTER"/>
+</form>
+
+<h3>Login</h3>
+
+<div>Session Cookie {{.Session}}</div>
+<div>Username {{.User}}</div>
+
+<form action="/login" method="post">
+    <input type="text" name="user"/>
+    <input type="password" name="pass"/>
+    <input type="submit" value="LOGIN"/>
+</form>
+
+<form action="/logout" method="post">
+    <input type="submit" value="LOGOUT">
+</form>
